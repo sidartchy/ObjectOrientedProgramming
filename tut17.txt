@@ -1,0 +1,63 @@
+// Inheritance in CPP
+// Reusability , properties of existing class by inheriting from it, 
+// Existing class -->Base class and New class --> Derived class 
+
+/*
+    Forms of Inheritance:
+    -> Single Inheritance
+    -> Multiple Inheritance
+    -> Hierarchial Inheritance
+    -> Multilevel Inheritance
+    -> Hybrid Inheritance
+*/
+
+Single Inheritance :
+    A Derived class with only one Base class;
+    for example:
+        (base)Employee --> (derived)Programmer ( a programmer is also an Employee)
+
+
+Multiple Inheritance:
+    A Derived class with more than one base class ;
+
+    for example:
+
+       (base) Employee:(a)--------|
+                                  |-----> (derived)Programmer(c)   i.e a+b = c
+       (base) Assistant: (b)------|
+
+Hierarchial Inheritance:
+    Several derived classes from a single Base class
+                            |--->(derived) Manager
+    (base) Employee ------->|
+                            |--->(derived) Programmer
+
+Multilevel Inheritance:
+    Deriving a class from already derived class
+
+    (base) Animal  ---> (derived) Mammal-----> (derived) Cow
+
+Hybrid Inheritance:
+    A combination fo Multiple Inheritance and Multilevel Inheritance
+    A class is derived from two classes as in Multiple Inheritance
+    however , one of the parent classes is not a base class
+    example:
+
+        |---->b---------|                   a = Animal
+    a--_|               | --> d             b= Mammal , c = Bird
+        |---->c---------|                   d = Bat
+
+//Derived Class syntax
+/*
+class {{derived class-name}} : {{visibility mode}}   {{base class name}}
+{
+    class members/methods etc...
+}
+
+Note:
+1. Default visibility mode is private.
+2. Private visibility mode: Public members of the base class becomes private members of the derived class
+3. Public visibility mode: Public members of the base class becomes public members of the derived class
+4. Private members are never inherited.
+*/
+
