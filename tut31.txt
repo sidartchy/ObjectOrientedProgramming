@@ -1,0 +1,20 @@
+Polymorphism
+-------------------
+Poly - Multi
+morphism - face/form
+-----------------------
+one name , multiple form
+Example:
+    function Overloading, operator Overloading
+    Virtual function
+
+Types of Polymorphism
+1. Compile-Time Polymorphism  ->
+2. Run-Time Polymorphism
+
+Compile-Time Polymorphism:
+    i. function Overloading
+    ii. operator Overloading
+
+Run-Time Polymorphism:
+    i. Virtual functions
